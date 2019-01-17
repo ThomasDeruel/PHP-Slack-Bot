@@ -1,0 +1,19 @@
+{
+    "name": "aymdev/php_slack_bot",
+    "description": "A friendly bot that knows a lot about PHP !",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "aymdev",
+            "email": "aymericmayeux@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "botman/driver-slack": "^2.1",
+        "mpociot/slack-client": "^1.2",
+        "": "src/"
+    }
+}
