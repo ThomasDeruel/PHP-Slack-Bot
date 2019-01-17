@@ -13,7 +13,11 @@
     "prefer-stable": true,
     "require": {
         "botman/driver-slack": "^2.1",
-        "mpociot/slack-client": "^1.2",
-        "": "src/"
+        "mpociot/slack-client": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
     }
 }
