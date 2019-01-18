@@ -12,7 +12,7 @@ DriverManager::loadDriver(SlackRTMDriver::class);
 $loop = Factory::create();
 $botman = BotManFactory::createForRTM([
     'slack' => [
-        'token' => 'xoxb-527238373074-527075155572-4I1Fl9oHAC6keYKAv3ImiX2k',
+        'token' => 'xoxb-527238373074-527075155572-ziGh4z43yHh2Is1c1PIHGB18',
     ],
 ], $loop);
 
@@ -29,4 +29,5 @@ $botman->hears('stop', [$phpBot, 'arreterPartie']);
 $botman->hears('statut', [$phpBot, 'obtenirStatut']);
 
 $botman->hears('lettre (.)', [$phpBot, 'proposerCaractere']);
+$botman->hears('reponse (.+)', [$phpBot, 'proposerReponse']);
 $loop->run();
